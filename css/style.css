@@ -101,8 +101,7 @@ nav a {
     /* Filled navy when hovered or when the menu is open */
     .menu-toggle:hover,
     nav.open .menu-toggle {
-        background: var(--navy);
-        color: var(--white);
+        background: #2563eb;
     }
 
 /* ==========================================================
