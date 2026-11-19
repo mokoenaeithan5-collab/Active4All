@@ -79,8 +79,8 @@ nav a {
     display: none;
     align-items: center;
     gap: 8px;
-    background: none;
-    color: var(--navy);
+    background-color: #ffffff;
+    color: #0f172a;
     border: 1px solid #94a3b8;
     border-radius: 6px;
     padding: 6px 12px;
@@ -90,13 +90,9 @@ nav a {
     -webkit-tap-highlight-color: transparent;
 }
 
-    .menu-toggle i {
-        font-size: 1.1rem;
-    }
-
-    .menu-toggle:focus-visible {
-        outline: 3px solid var(--gold);
-        outline-offset: 2px;
+    .menu-toggle i,
+    .menu-toggle .menu-label {
+        color: #0f172a;
     }
 
     /* Response when menu is opened */
