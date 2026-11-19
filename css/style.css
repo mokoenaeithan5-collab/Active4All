@@ -79,19 +79,23 @@ nav a {
     display: none;
     align-items: center;
     gap: 8px;
-    background: var(--white);
+    background: none;
     color: var(--navy);
-    border: 2px solid var(--navy);
-    border-radius: 8px;
-    padding: 8px 14px;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    padding: 6px 12px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
 }
 
     .menu-toggle i {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .menu-toggle:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 2px;
     }
 
     /* Filled navy when hovered or when the menu is open */
