@@ -87,6 +87,7 @@ nav a {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
     .menu-toggle i {
@@ -98,8 +99,7 @@ nav a {
         outline-offset: 2px;
     }
 
-    /* Filled navy when hovered or when the menu is open */
-    .menu-toggle:hover,
+    /* Responce when menu is opened */
     nav.open .menu-toggle {
         background: #2563eb;
     }
