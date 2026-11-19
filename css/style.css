@@ -206,14 +206,20 @@ nav a {
         color: var(--navy);
     }
 
-/* Responsive grid used by BOTH card sections.
-   It wraps automatically, so it also handles mobile. */
+/* Responsive card layout used by BOTH card sections.
+   Cards wrap onto new rows, and any leftover cards are centred. */
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-top: 40px;
 }
+
+    .card-grid .card {
+        flex: 1 1 250px;
+        max-width: 360px;
+    }
 
 
 /* ==========================================================
