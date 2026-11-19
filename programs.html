@@ -1,10 +1,256 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
+
+<!-- ======================================================
+     HEAD
+     ====================================================== -->
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Programmes | Active4All</title>
+    <meta name="description" content="Football training, sports and fitness, coaching, team building and events for children and adults. See our programmes and book a free trial.">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
+
+    <!-- ======================================================
+         NAVIGATION BAR (same as every other page)
+         ====================================================== -->
+    <nav>
+
+        <a href="index.html" class="logo">Active4All</a>
+
+        <button class="menu-toggle"
+                id="menu-toggle"
+                aria-expanded="false"
+                aria-controls="nav-menu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            <span class="menu-label">Menu</span>
+        </button>
+
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html" aria-current="page">Programs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <a href="https://wa.me/27674630135?text=Hi%20Active4All%2C%20I%27d%20like%20to%20book%20a%20free%20trial" class="btn">Book Trial</a>
+
+    </nav>
+
+
+    <main>
+
+        <!-- ==================================================
+             SECTION 1: PAGE HEADER (dark banner at the top)
+             ================================================== -->
+        <section class="page-header">
+            <h1>Our Programmes</h1>
+            <p>
+                Professional coaching for children and adults. Find the
+                programme that fits you, then book a free trial.
+            </p>
+        </section>
+
+
+        <!-- ==================================================
+             SECTION 2: PROGRAMME CARDS
+             Each card: icon, name, description, details, button.
+             The button opens WhatsApp with the programme name
+             already typed in.
+             ================================================== -->
+        <section class="programs-page">
+
+            <div class="card-grid">
+
+                <!-- ----- Programme 1: Football Club ----- -->
+                <div class="card program-card">
+                    <i class="fa-solid fa-futbol icon-circle" aria-hidden="true"></i>
+                    <h3>Football Club</h3>
+                    <p>
+                        Professional football training and
+                        player development programs.
+                    </p>
+
+                    <ul class="program-meta">
+                        <li><span>Ages</span> <strong>>>> CHANGE <<<</strong></li>
+                        <li><span>Days</span> <strong>>>> CHANGE <<<</strong></li>
+                        <li><span>Times</span> <strong>>>> CHANGE <<<</strong></li>
+                    </ul>
+
+                    <a href="https://wa.me/27674630135?text=Hi%20Active4All%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Football%20Club%20programme" class="btn">Ask About This</a>
+                </div>
+
+                <!-- ----- Programme 2: Sports & Fitness ----- -->
+                <div class="card program-card">
+                    <i class="fa-solid fa-person-running icon-circle" aria-hidden="true"></i>
+                    <h3>Sports &amp; Fitness</h3>
+                    <p>
+                        Fun and engaging activities that
+                        promote healthy lifestyles.
+                    </p>
+
+                    <ul class="program-meta">
+                        <li><span>Ages</span> <strong>>>> CHANGE <<<</strong></li>
+                        <li><span>Days</span> <strong>>>> CHANGE <<<</strong></li>
+                        <li><span>Times</span> <strong>>>> CHANGE <<<</strong></li>
+                    </ul>
+
+                    <a href="https://wa.me/27674630135?text=Hi%20Active4All%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Sports%20%26%20Fitness%20programme" class="btn">Ask About This</a>
+                </div>
+
+                <!-- ----- Programme 3: Coaching ----- -->
+                <div class="card program-card">
+                    <i class="fa-solid fa-medal icon-circle" aria-hidden="true"></i>
+                    <h3>Coaching</h3>
+                    <p>
+                        Experienced coaches helping athletes
+                        build skills and confidence.
+                    </p>
+
+                    <ul class="program-meta">
+                        <li><span>Ages</span> <strong>>>> CHANGE <<<</strong></li>
+                        <li><span>Days</span> <strong>>>> CHANGE <<<</strong></li>
+                        <li><span>Times</span> <strong>>>> CHANGE <<<</strong></li>
+                    </ul>
+
+                    <a href="https://wa.me/27674630135?text=Hi%20Active4All%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Coaching%20programme" class="btn">Ask About This</a>
+                </div>
+
+                <!-- ----- Programme 4: Team Building ----- -->
+                <div class="card program-card">
+                    <i class="fa-solid fa-users icon-circle" aria-hidden="true"></i>
+                    <h3>Team Building</h3>
+                    <p>
+                        Activities designed to improve
+                        teamwork and communication.
+                    </p>
+
+                    <ul class="program-meta">
+                        <li><span>Ages</span> <strong>>>> CHANGE <<<</strong></li>
+                        <li><span>Days</span> <strong>>>> CHANGE <<<</strong></li>
+                        <li><span>Times</span> <strong>>>> CHANGE <<<</strong></li>
+                    </ul>
+
+                    <a href="https://wa.me/27674630135?text=Hi%20Active4All%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Team%20Building%20programme" class="btn">Ask About This</a>
+                </div>
+
+                <!-- ----- Programme 5: Events ----- -->
+                <div class="card program-card">
+                    <i class="fa-solid fa-calendar-days icon-circle" aria-hidden="true"></i>
+                    <h3>Events</h3>
+                    <p>
+                        Sports events and community
+                        activities for all ages.
+                    </p>
+
+                    <ul class="program-meta">
+                        <li><span>Ages</span> <strong>All ages</strong></li>
+                        <li><span>Days</span> <strong>See Events page</strong></li>
+                        <li><span>Times</span> <strong>See Events page</strong></li>
+                    </ul>
+
+                    <a href="events.html" class="btn">View Events</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             SECTION 3: HOW IT WORKS (3 simple steps)
+             ================================================== -->
+        <section class="how-it-works">
+
+            <h2>How To Join</h2>
+
+            <div class="steps">
+
+                <!-- Step 1 -->
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>Send Us a Message</h3>
+                    <p>Tell us who is joining and which programme interests you.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>Come To a Free Trial</h3>
+                    <p>Try a session with our best coaches before you commit.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>Join The Team</h3>
+                    <p>Pick your days and start building skills and confidence.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             SECTION 4: CALL TO ACTION (reuses your .cta style)
+             ================================================== -->
+        <section class="cta">
+
+            <h2>Not Sure Which One To Pick?</h2>
+
+            <p>
+                Message us and we will help you choose the right programme.
+            </p>
+
+            <a href="contact.html" class="btn">
+                Contact Us
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================================
+         FOOTER (same as every other page)
+         ====================================================== -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>Active4All</h3>
+
+            <p>
+                Building confidence, fitness and teamwork through sport.
+            </p>
+
+            <p>
+                Email: info@active4all.co.za
+            </p>
+
+            <p>
+                &copy; 2026 Active4All. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/menu.js"></script>
 
 </body>
 </html>

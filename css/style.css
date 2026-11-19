@@ -602,6 +602,100 @@ nav a[aria-current="page"] {
 }
 
 /* ==========================================================
+   15. PROGRAMS PAGE
+   ========================================================== */
+
+/* ----- Section wrapper for the programme cards ----- */
+.programs-page {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+/* ----- Programme card: button always sits at the bottom ----- */
+.program-card {
+    display: flex;
+    flex-direction: column;
+}
+
+    .program-card .btn {
+        margin-top: auto;
+        text-align: center;
+    }
+
+/* ----- Details list: Ages / Days / Times ----- */
+.program-meta {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0 25px;
+    border-top: 1px solid #e2e8f0;
+}
+
+    .program-meta li {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e2e8f0;
+        color: var(--text-muted);
+    }
+
+    .program-meta strong {
+        color: var(--navy);
+        text-align: right;
+    }
+
+
+/* ----- How it works section ----- */
+.how-it-works {
+    padding: 80px 8%;
+    background: var(--white);
+    text-align: center;
+}
+
+    .how-it-works h2 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        color: var(--navy);
+    }
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.step {
+    flex: 1 1 220px;
+    max-width: 300px;
+}
+
+/* Numbered circle above each step */
+.step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.step h3 {
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* ==========================================================
    13. MOBILE STYLES
    ========================================================== */
 @media screen and (max-width: 768px) {
