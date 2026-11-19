@@ -77,26 +77,33 @@ nav a {
    ========================================================== */
 .menu-toggle {
     display: none;
-    background: none;
-    border: none;
-    font-size: 1.8rem;
+    align-items: center;
+    gap: 8px;
+    background: var(--white);
     color: var(--navy);
-    cursor: pointer;
-    padding: 8px 12px;
+    border: 2px solid var(--navy);
     border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-    .menu-toggle:focus-visible {
-        outline: 3px solid var(--gold);
-        outline-offset: 2px;
+    .menu-toggle i {
+        font-size: 1.2rem;
     }
 
-
+    /* Filled navy when hovered or when the menu is open */
+    .menu-toggle:hover,
+    nav.open .menu-toggle {
+        background: var(--navy);
+        color: var(--white);
+    }
 
 /* ==========================================================
    4. BUTTONS
    ========================================================== */
-
 .btn {
     background: var(--blue);
     color: var(--white);
@@ -431,7 +438,7 @@ footer {
 
     /* Show the hamburger button on mobile */
     .menu-toggle {
-        display: block;
+        display: flex;
     }
 
     /* ----- Drop-down panel: hidden until the button is tapped ----- */

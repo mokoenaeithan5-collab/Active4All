@@ -10,16 +10,15 @@ const icon = toggle.querySelector('i');
 
 
 // ----- 2. Function that opens or closes the menu -----
+const label = toggle.querySelector('.menu-label');
+
 function setMenu(isOpen) {
-    // Add or remove the "open" class (CSS shows the menu when it is there)
     nav.classList.toggle('open', isOpen);
-
-    // Update accessibility info for screen readers
     toggle.setAttribute('aria-expanded', isOpen);
-    toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
 
-    // Swap the icon: bars (closed) or X (open)
+    // Swap the icon and the word: Menu (closed) or Close (open)
     icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    label.textContent = isOpen ? 'Close' : 'Menu';
 }
 
 
