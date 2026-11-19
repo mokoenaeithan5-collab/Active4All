@@ -475,10 +475,11 @@ footer {
     .hero {
         min-height: 100vh;
         height: auto;
-        padding: 40px 20px;
-        background: linear-gradient( rgba(15,23,42,.7), rgba(15,23,42,.7) ), url('../images/hero.webp');
+        align-items: flex-start;
+        padding: 50px 20px 0;
+        background: linear-gradient( rgba(15,23,42,.15), rgba(15,23,42,.85) ), url('../images/hero.webp');
         background-size: cover;
-        background-position: center;
+        background-position: 80% center;
         text-align: center;
     }
 
