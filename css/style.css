@@ -477,9 +477,9 @@ footer {
         height: auto;
         align-items: flex-start;
         padding: 50px 20px 0;
-        background: linear-gradient( rgba(15,23,42,.15), rgba(15,23,42,.85) ), url('../images/hero.webp');
+        background: linear-gradient( rgba(15,23,42,.15), rgba(15,23,42,.85) ), url('../images/hero_potrait.jpg');
         background-size: cover;
-        background-position: 80% center;
+        background-position: center;
         text-align: center;
     }
 
