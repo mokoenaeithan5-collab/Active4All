@@ -72,6 +72,26 @@ nav a {
         color: var(--white);
     }
 
+/* ==========================================================
+   A. HAMBURGER BUTTON (This part is for the mobile users)
+   ========================================================== */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--navy);
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+    .menu-toggle:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 2px;
+    }
+
+
 
 /* ==========================================================
    4. BUTTONS
@@ -395,21 +415,61 @@ footer {
    ========================================================== */
 @media screen and (max-width: 768px) {
 
-    /* ----- Navigation: logo on top, links in a wrapping row ----- */
+    /* ----- Navigation bar: logo on the left with hamburger on the right ----- */
     nav {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-        gap: 15px;
-        padding: 20px;
+        gap: 0;
+        padding: 15px 20px;
     }
 
-        nav ul {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px 20px;
-            padding: 0;
+    .logo {
+        font-size: 24px;
+    }
+
+    /* Show the hamburger button on mobile */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* ----- Drop-down panel: hidden until the button is tapped ----- */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+        margin-top: 15px;
+        border-top: 1px solid #e2e8f0;
+    }
+
+        /* Big, easy-to-tap rows */
+        nav ul li a {
+            display: block;
+            padding: 14px 0;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
         }
+
+    /* Book Trial button: hidden until the menu opens */
+    nav a.btn {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* ----- OPEN STATE: JavaScript adds the class "open" to <nav> ----- */
+    nav.open ul {
+        display: flex;
+    }
+
+    nav.open a.btn {
+        display: block;
+    }
+
 
     /* ----- Hero ----- */
     .hero {
@@ -476,5 +536,3 @@ footer {
         font-size: 1rem;
     }
 }
-
-Claude finished the response

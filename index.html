@@ -32,9 +32,21 @@
          NAVIGATION BAR
          ====================================================== -->
     <nav>
+
+        <!-- Logo -->
         <a href="index.html" class="logo">Active4All</a>
 
-        <ul>
+        <!-- Hamburger button (It is only visible on mobile) -->
+        <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="nav-menu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <!-- This list drops down on mobile -->
+        <ul id="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="programs.html">Programs</a></li>
             <li><a href="events.html">Events</a></li>
@@ -42,8 +54,11 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
+        <!-- "Book Trial" button-->
         <a href="https://wa.me/27674630135?text=Hi%20Active4All%2C%20I%27d%20like%20to%20book%20a%20free%20trial" class="btn">Book Trial</a>
+
     </nav>
+
 
 
     <!-- All webpage content is here: <main> -->
@@ -83,7 +98,6 @@
             <div class="card-grid">
 
                 <!-- Program cards -->
-
                 <!-- Football Club -->
                 <div class="card">
                     <i class="fa-solid fa-futbol icon-circle" aria-hidden="true"></i>
@@ -148,7 +162,6 @@
             <div class="card-grid">
 
                 <!-- Reasons -->
-
                 <!-- Qualified Coaches -->
                 <div class="card">
                     <i class="fa-solid fa-medal icon-circle" aria-hidden="true"></i>
@@ -304,6 +317,9 @@
         </div>
 
     </footer>
+
+    <script src="js/menu.js"></script>
+
 
 </body>
 </html>
