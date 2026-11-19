@@ -102,7 +102,7 @@ nav a {
 
     /* Responce when menu is opened */
     nav.open .menu-toggle {
-        background: #2563eb;
+        background: var(--white);
     }
 
 /* ==========================================================
